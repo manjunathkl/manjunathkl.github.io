@@ -1,0 +1,638 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+
+
+
+/* Frequently used Styles on the page */
+.sub-heading{
+    font-family: 'Poppins', sans-serif;
+    color: #263238;
+    font-size: 1.5rem;
+}
+
+.sub-sub-heading{
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 1rem;
+    color: #343A40;
+}
+
+.details{
+    font-family: 'Poppins';
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 2rem;
+    color: #6B6C6D;
+    letter-spacing: 0.04rem;
+    text-decoration: none;
+}
+
+hr{
+    border: 2px dashed #DADADA;
+    border-top: none;
+}
+
+/* Frequently used styles on the page ends here */
+
+
+
+/* Header : Navabr begins here */
+
+#header{
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#header #logo-group{
+    /* border: 2px solid green; */
+    display: flex;
+
+}
+
+/* #header #left-nav-contents{
+    border: 2px solid yellow;
+} */
+
+#header img{
+    width: 48px;
+    height: 48px;
+    margin: 10px 10px 10px 25px;
+}
+
+#logo{
+    height: 47px;
+    width: 39px;
+    cursor: pointer;
+}
+
+#logo-name{
+    margin-right: auto;
+    color: #444BAB;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+
+/* left most part of header */
+#notification-bell{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+
+#left-nav-contents{
+    display: flex;
+    align-items: center;
+}
+
+#header #left-nav-contents #header-profile{
+    border: none;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+#header #left-nav-contents #user-name{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #263238;
+    cursor: pointer;
+}
+
+#left-nav-contents #dropdown{
+    width: 20px;
+    height: 10px;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+
+
+/* LEFT PANE BEGINS HERE */
+
+#main-content{
+    display: flex;
+}
+
+#left-pane{
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-left: 10%;
+    padding: 15px 0;
+}
+
+#left-pane #user{
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 85px;
+}
+
+#left-pane #user #circle{
+    background: linear-gradient(to bottom, #3BABC3, #444BAB);
+    border-radius: 100%;
+    width: 240px;
+    height: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#left-pane #user #circle #white-circle{
+    border-radius: 100%;
+    width: 235px;
+    height: 235px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#left-pane #user #circle #user-pic{
+    border-radius: 100%;
+    width: 220px;
+    height: 220px;
+}
+
+#left-pane #user #user-name-heading{
+    font-family: 'Poppins', sans-serif;
+    color: #263238;
+    font-size: 2.1rem;
+}
+
+
+
+#left-pane #user-details #about #about-content{
+    font-family: 'Poppins', sans-serif;
+    color: #565655;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.05rem;
+    text-align: justify;
+}
+
+
+
+#left-pane #user-details #contact #email, #contact-number{
+    display: flex;
+    align-items: center;
+}
+
+#left-pane #user-details img{
+    margin-right: 10px;
+}
+
+#left-pane #user-details #social-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#left-pane #user-details #social-links > div{
+    display: flex;
+    align-items: center;
+}
+
+
+/* RIGHT PANE BEGINS HERE */
+
+#right-pane{
+    /* border: 2px solid purple; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+}
+
+#right-pane .right-sub-sub{
+    font-weight: 500;
+}
+
+#right-pane #amazon{
+    font-style: italic;
+}
+#moviebazar{
+    font-family: 'Poppins';
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 2rem;
+    letter-spacing: 0.04rem;
+    text-decoration: none;
+}
+
+#right-pane .key-value{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#right-pane .key-value div {
+    display: flex;
+}
+
+#right-pane .key-value div h4{
+    margin-right: 5px;
+}
+
+
+
+
+/* MEDIA QUERIES BEGINS HERE */
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+
+    /* Frequently used Styles on the page */
+    
+    .sub-heading, .sub-sub-heading, .details, hr{
+        text-align: center;
+    }
+
+    #main-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+    /* LEFT PANE QUERIES BEGINS HERE */
+
+    #main-content{
+        /* border: 2px solid purple; */
+        margin-left: 5%;
+        margin-right: 5%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+
+    #left-pane{
+        /* border: 2px solid blue; */
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        margin-left: 5%;
+        padding: 15px 0;
+    }
+
+    #contact > div{
+        /* border: 2px solid green; */
+        display: flex;
+        /* justify-content: center; */
+        margin: 5% auto;
+    }
+
+    #social-links > div{
+        /* border: 2px solid green; */
+        display: flex;
+        /* justify-content: center; */
+        margin: 2% 0;
+    }
+
+    #user-details img{
+        height: 35px;
+        width: 35px;
+    }
+
+    #user-details a{
+        font-size: 1.5rem;
+    }
+
+    /* #social-links > div > img{
+        height: 35px;
+        width: 35px;
+    } */
+
+    /* #social-links > div > a{
+        font-size: 1.5rem;
+    } */
+
+
+
+    /* RIGHT PANE QUERIES BEGINS HERE */
+
+    #right-pane{
+    /* border: 2px solid purple; */
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    }
+
+    #right-pane > div > h4{
+        text-align: left;
+    }
+
+    #right-pane > div > p{
+        text-align: left;
+    }
+
+    #right-pane > div > ul li{
+        text-align: left;
+    }
+}
+
+
+@media screen and (min-width: 501px) and (max-width: 768px){
+    /* Frequently used Styles on the page */
+    
+    .sub-sub-heading, .details, hr{
+        font-size: 0.8rem;
+    }
+
+    #main-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* HEADER QUERIES BEGINS HERE */
+
+    #header #logo-group{
+        /* border: 2px solid green; */
+        display: flex;
+        align-items: center;
+    }
+
+    #header #logo-group #logo{
+        height: 35px;
+        width: 30px;
+        cursor: pointer;
+    }
+
+    #header #logo-group #logo-name{
+        font-size: 1rem;
+    }
+
+    #header #left-nav-contents #header-profile{
+        width: 25px;
+        height: 25px;
+    }
+
+    #notification-bell{
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+    }
+    #left-nav-contents #dropdown{
+        width: 10px;
+        height: 5px;
+        margin-right: 25px;
+        cursor: pointer;
+    }
+
+
+    /* LEFT PANE QUERIES BEGINS HERE */
+
+    #left-pane{
+        /* border: 2px solid blue; */
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        margin-left: 5%;
+        padding: 15px 0;
+    }
+
+
+    #left-pane #user{
+        /* border: 2px solid green;
+        background-color: yellow; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* padding: 20px 55px; */
+    }
+    
+    /* #left-pane #user #circle{
+        background: linear-gradient(to bottom, #3BABC3, #444BAB);
+        border-radius: 100%;
+        width: 200px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #left-pane #user #circle #white-circle{
+        border-radius: 100%;
+        width: 195px;
+        height: 195px;
+        background: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #left-pane #user #circle #user-pic{
+        border-radius: 100%;
+        width: 180px;
+        height: 180px;
+    } */
+    
+    #left-pane #user #user-name-heading{
+        /* border: 2px solid red; */
+        font-family: 'Poppins', sans-serif;
+        color: #263238;
+        font-size: 1.5rem;
+        text-align: center;
+        width: 250px;
+    }
+
+    #user-details img{
+        height: 15px;
+        width: 15px;
+    }
+
+    #user-details a{
+        font-size: 0.9rem;
+    }
+
+    /* RIGHT PANE QUERIES BEGINS HERE */
+
+    #right-pane{
+    /* border: 2px solid purple; */
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    }
+
+    #right-pane > div > h3{
+        text-align: left;
+        font-size: 1rem;
+    }
+
+    #right-pane > div > h4{
+        text-align: left;
+    }
+
+    #right-pane > div > p{
+        text-align: left;
+    }
+
+    #right-pane > div > ul li{
+        text-align: left;
+    }
+
+    #right-pane #moviebazar{
+        font-size: 0.8rem;
+    }
+}
+
+
+@media screen and (max-width: 500px){
+    /* Frequently used Styles on the page */
+
+    .sub-sub-heading, .details, hr{
+        font-size: 0.7rem;
+        line-height: 2.2;
+        letter-spacing: 1;
+    }
+
+
+    /* HEADER QUERIES BEGINS HERE */
+
+    #header{
+        /* border: 2px solid red; */
+        display: flex;
+        flex-direction: column;
+        /* align-items: center;
+        justify-content: space-between; */
+    }
+
+    #header #logo-group{
+        /* border: 2px solid green; */
+        display: flex;
+        align-items: center;
+    }
+
+    #header #logo-group #logo{
+        height: 35px;
+        width: 30px;
+        cursor: pointer;
+    }
+
+    #header #logo-group #logo-name{
+        font-size: 1rem;
+    }
+    
+    #header #left-nav-contents{
+        /* border: 2px solid yellow; */
+        display: none;
+    }
+
+
+    #main-content{
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+    /* LEFT PANE QUERIES BEGINS HERE */
+
+    #left-pane{
+        /* border: 2px solid blue; */
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        margin-left: 5%;
+        padding: 15px 0;
+    }
+
+
+    #left-pane #user{
+        /* border: 2px solid green;
+        background-color: yellow; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* padding: 20px 55px; */
+    }
+    
+    #left-pane #user #circle{
+        background: linear-gradient(to bottom, #3BABC3, #444BAB);
+        border-radius: 100%;
+        width: 200px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #left-pane #user #circle #white-circle{
+        border-radius: 100%;
+        width: 195px;
+        height: 195px;
+        background: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #left-pane #user #circle #user-pic{
+        border-radius: 100%;
+        width: 180px;
+        height: 180px;
+    }
+    
+    #left-pane #user #user-name-heading{
+        /* border: 2px solid red; */
+        font-family: 'Poppins', sans-serif;
+        color: #263238;
+        font-size: 1.5rem;
+        text-align: center;
+        width: 250px;
+    }
+
+    #user-details img{
+        height: 15px;
+        width: 15px;
+    }
+
+    #user-details a{
+        font-size: 0.9rem;
+    }
+
+    /* RIGHT PANE QUERIES BEGINS HERE */
+    
+    #right-pane{
+    /* border: 2px solid purple; */
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    }
+
+    #right-pane > div > h3{
+        text-align: left;
+        font-size: 0.8rem;
+    }
+    
+    #right-pane > div > h4{
+        text-align: left;
+    }
+
+    #right-pane > div > p{
+        text-align: left;
+    }
+
+    #right-pane > div > ul li{
+        text-align: left;
+    }
+
+    #right-pane #moviebazar{
+        font-size: 0.7rem;
+    }
+}
